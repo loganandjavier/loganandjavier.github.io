@@ -55,12 +55,12 @@
             align-items: center;
             justify-content: center;
             margin: 2rem 0;
-            color: #b08d55;
+            color: '#b08d55';
         }
         .separator::before, .separator::after {
             content: "";
             flex: 1;
-            border-bottom: 1px solid #dec6a3;
+            border-bottom: 1px solid '#dec6a3';
             margin: 0 1rem;
             max-width: 100px;
         }
@@ -68,26 +68,22 @@
 </head>
 <body class="font-sans text-stone-700 bg-wedding-50 antialiased">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+    <!-- Navigation --><nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
         <div class="bg-white/90 backdrop-blur-md shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
-                    <!-- Logo -->
-                    <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo --><div class="flex-shrink-0 flex items-center">
                         <a href="#" class="font-serif text-2xl text-wedding-600 tracking-wider font-semibold">L & J</a>
                     </div>
                     
-                    <!-- Desktop Menu -->
-                    <div class="hidden md:flex space-x-8">
+                    <!-- Desktop Menu --><div class="hidden md:flex space-x-8">
                         <a href="#story" class="text-stone-600 hover:text-wedding-600 px-3 py-2 text-sm font-medium tracking-widest uppercase transition">Our Story</a>
                         <a href="#details" class="text-stone-600 hover:text-wedding-600 px-3 py-2 text-sm font-medium tracking-widest uppercase transition">When & Where</a>
                         <a href="#registry" class="text-stone-600 hover:text-wedding-600 px-3 py-2 text-sm font-medium tracking-widest uppercase transition">Registry</a>
                         <a href="#rsvp" class="bg-wedding-500 hover:bg-wedding-600 text-white px-6 py-2 rounded-full text-sm font-medium tracking-widest uppercase transition shadow-md">RSVP</a>
                     </div>
 
-                    <!-- Mobile Menu Button -->
-                    <div class="md:hidden flex items-center">
+                    <!-- Mobile Menu Button --><div class="md:hidden flex items-center">
                         <button id="mobile-menu-btn" class="text-stone-600 hover:text-wedding-600 focus:outline-none p-2">
                             <i class="fas fa-bars text-2xl"></i>
                         </button>
@@ -96,8 +92,7 @@
             </div>
         </div>
 
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+        <!-- Mobile Menu Panel --><div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-1 text-center">
                 <a href="#story" class="block px-3 py-3 text-stone-600 font-medium hover:bg-wedding-50 hover:text-wedding-600">Our Story</a>
                 <a href="#details" class="block px-3 py-3 text-stone-600 font-medium hover:bg-wedding-50 hover:text-wedding-600">Details</a>
@@ -107,10 +102,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
+    <!-- Hero Section --><header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <!-- Background Image with Overlay --><div class="absolute inset-0 z-0">
             <img 
                 src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
                 alt="Wedding Background" 
@@ -125,65 +118,46 @@
                 Logan <span class="block md:inline text-4xl md:text-6xl italic font-light">&</span> Javier
             </h1>
             <div class="flex items-center justify-center space-x-4 text-white font-serif text-2xl md:text-3xl italic">
-                <span>October 12, 2025</span>
+                <span>June 27, 2026</span>
             </div>
-            <p class="text-white mt-4 uppercase tracking-widest text-sm md:text-base">San Francisco, California</p>
+            <p class="text-white mt-4 uppercase tracking-widest text-sm md:text-base">Canadian Lakes, Michigan</p>
         </div>
 
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white">
+        <!-- Scroll Indicator --><div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white">
             <i class="fas fa-chevron-down text-2xl"></i>
         </div>
     </header>
 
-    <!-- Countdown Section -->
-    <section class="py-16 bg-white">
+    <!-- Countdown Section --><section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-center font-serif text-wedding-800" id="countdown">
-                <!-- Populated by JS -->
-            </div>
+                <!-- Populated by JS --></div>
         </div>
     </section>
 
-    <!-- Our Story -->
-    <section id="story" class="py-20 md:py-28 bg-wedding-50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <span class="text-wedding-500 text-sm font-bold tracking-widest uppercase">How it began</span>
-            <h2 class="font-serif text-4xl md:text-5xl text-wedding-900 mt-2 mb-8">Our Story</h2>
-            <div class="separator"><i class="fas fa-heart text-xl"></i></div>
-            
-            <div class="space-y-12 mt-12">
-                <!-- Story Item 1 -->
-                <div class="fade-in flex flex-col md:flex-row items-center gap-8 text-left">
-                    <div class="md:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1522673607200-1645062ac2d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="First Date" class="rounded shadow-xl w-full h-64 object-cover">
-                    </div>
-                    <div class="md:w-1/2">
-                        <h3 class="font-serif text-2xl text-wedding-800 mb-2">The First Date</h3>
-                        <p class="text-stone-600 leading-relaxed">
-                            We met at a small coffee shop in the Mission District. Logan spilled his latte, Javier laughed, and the rest is history. It was a rainy Tuesday that turned into the best day of our lives.
-                        </p>
-                    </div>
+    <!-- Our Story --><section id="story" class="py-20 md:py-28 bg-wedding-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <span class="text-wedding-500 text-sm font-bold tracking-widest uppercase">How it began</span>
+        <h2 class="font-serif text-4xl md:text-5xl text-wedding-900 mt-2 mb-8">Our Story</h2>
+        <div class="separator"><i class="fas fa-heart text-xl"></i></div>
+        
+        <div class="space-y-12 mt-12">
+            <!-- Single Story Item with Square Image --><div class="fade-in flex flex-col items-center gap-8 text-center">
+                <div class="w-full md:w-1/2 max-w-sm mx-auto">
+                    <!-- Changed object-cover to object-contain and adjusted height/max-height --><img src="loganandjavi.jpeg" alt="Logan and Javier" class="rounded shadow-xl w-full h-auto max-h-96 object-contain object-center aspect-square">
                 </div>
-
-                <!-- Story Item 2 -->
-                <div class="fade-in flex flex-col md:flex-row-reverse items-center gap-8 text-left md:text-right">
-                    <div class="md:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The Proposal" class="rounded shadow-xl w-full h-64 object-cover">
-                    </div>
-                    <div class="md:w-1/2">
-                        <h3 class="font-serif text-2xl text-wedding-800 mb-2">The Proposal</h3>
-                        <p class="text-stone-600 leading-relaxed">
-                            Three years later, on a hike overlooking the Golden Gate Bridge, Javier got down on one knee. We celebrated with tacos and margaritas afterwards, exactly as we planned.
-                        </p>
-                    </div>
+                <div class="md:w-full">
+                    <h3 class="font-serif text-2xl text-wedding-800 mb-2">Our Journey Together</h3>
+                    <p class="text-stone-600 leading-relaxed max-w-2xl mx-auto">
+                        We met dancing salsa, and sparks flew instantly. The night was filled with laughter, music, and the beginning of something beautiful. Three years later, Disneyland made it special. Javier got down on one knee, and Logan said yes! Surrounded by the magic of the park, it felt like a fairy tale come true. We're excited to start our next chapter!
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- When & Where -->
-    <section id="details" class="py-20 md:py-28 bg-white">
+    <!-- When & Where --><section id="details" class="py-20 md:py-28 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
                 <span class="text-wedding-500 text-sm font-bold tracking-widest uppercase">The Logistics</span>
@@ -192,37 +166,34 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
-                <!-- Ceremony -->
-                <div class="fade-in bg-wedding-50 p-10 rounded-lg text-center shadow-sm border border-wedding-100">
+                <!-- Ceremony --><div class="fade-in bg-wedding-50 p-10 rounded-lg text-center shadow-sm border border-wedding-100">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-wedding-500 shadow-sm">
                         <i class="fas fa-church text-2xl"></i>
                     </div>
                     <h3 class="font-serif text-3xl text-wedding-900 mb-2">The Ceremony</h3>
-                    <p class="text-stone-500 font-bold uppercase tracking-wider mb-4">4:00 PM</p>
-                    <p class="text-stone-700 mb-1 font-semibold">San Francisco City Hall</p>
-                    <p class="text-stone-600">1 Dr Carlton B Goodlett Pl</p>
-                    <p class="text-stone-600 mb-6">San Francisco, CA 94102</p>
-                    <a href="https://maps.google.com" target="_blank" class="text-wedding-600 hover:text-wedding-800 font-medium underline underline-offset-4">Get Directions</a>
+                    <p class="text-stone-500 font-bold uppercase tracking-wider mb-4">10:00 AM</p>
+                    <p class="text-stone-700 mb-1 font-semibold">The Canadian Lakes Castle</p>
+                    <p class="text-stone-600">Pere Marquette Dr</p>
+                    <p class="text-stone-600 mb-6">Canadian Lakes, MI 49346</p>
+                    <a href="https://maps.app.goo.gl/3UYUFuSvqVQrbHEe6" target="_blank" class="text-wedding-600 hover:text-wedding-800 font-medium underline underline-offset-4">Get Directions</a>
                 </div>
 
-                <!-- Reception -->
-                <div class="fade-in bg-wedding-50 p-10 rounded-lg text-center shadow-sm border border-wedding-100">
+                <!-- Reception --><div class="fade-in bg-wedding-50 p-10 rounded-lg text-center shadow-sm border border-wedding-100">
                     <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-wedding-500 shadow-sm">
                         <i class="fas fa-glass-cheers text-2xl"></i>
                     </div>
                     <h3 class="font-serif text-3xl text-wedding-900 mb-2">The Reception</h3>
                     <p class="text-stone-500 font-bold uppercase tracking-wider mb-4">6:00 PM</p>
-                    <p class="text-stone-700 mb-1 font-semibold">The Foreign Cinema</p>
-                    <p class="text-stone-600">2534 Mission St</p>
-                    <p class="text-stone-600 mb-6">San Francisco, CA 94110</p>
-                    <a href="https://maps.google.com" target="_blank" class="text-wedding-600 hover:text-wedding-800 font-medium underline underline-offset-4">Get Directions</a>
+                    <p class="text-stone-700 mb-1 font-semibold">The Canadian Lakes Castle</p>
+                    <p class="text-stone-600">Pere Marquette Dr</p>
+                    <p class="text-stone-600 mb-6">Canadian Lakes, MI 49346</p>
+                    <a href="https://maps.app.goo.gl/3UYUFuSvqVQrbHEe6" target="_blank" class="text-wedding-600 hover:text-wedding-800 font-medium underline underline-offset-4">Get Directions</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Registry -->
-    <section id="registry" class="py-20 bg-wedding-800 text-white text-center">
+    <!-- Registry --><section id="registry" class="py-20 bg-wedding-800 text-white text-center">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="font-serif text-4xl md:text-5xl mb-6">Registry</h2>
             <p class="text-wedding-200 text-lg mb-10 max-w-2xl mx-auto">Your presence is enough of a present to us! But for those who wish to contribute, we have set up a few registries.</p>
@@ -242,76 +213,36 @@
     </section>
 
     <!-- RSVP Section -->
-    <section id="rsvp" class="py-20 md:py-28 bg-white relative">
-        <div class="max-w-3xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <span class="text-wedding-500 text-sm font-bold tracking-widest uppercase">Join Us</span>
-                <h2 class="font-serif text-4xl md:text-5xl text-wedding-900 mt-2">RSVP</h2>
-                <div class="separator"><i class="fas fa-envelope-open-text text-xl"></i></div>
-                <p class="text-stone-600 mt-4">Please respond by September 1st, 2025</p>
-            </div>
-
-            <div class="bg-wedding-50 p-8 md:p-12 rounded-xl shadow-lg border border-wedding-200 relative overflow-hidden">
-                
-                <!-- Success Message (Hidden by default) -->
-                <div id="rsvp-success" class="hidden absolute inset-0 bg-wedding-50 flex-col items-center justify-center text-center z-10 p-8">
-                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-600 animate-bounce">
-                        <i class="fas fa-check text-3xl"></i>
-                    </div>
-                    <h3 class="font-serif text-3xl text-wedding-900 mb-4">Thank You!</h3>
-                    <p class="text-stone-600 text-lg">Your RSVP has been sent. We can't wait to see you!</p>
-                    <button onclick="resetForm()" class="mt-8 text-wedding-600 underline">Send another response</button>
-                </div>
-
-                <form id="rsvp-form" onsubmit="handleRSVP(event)" class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">First Name</label>
-                            <input type="text" required class="w-full bg-white border border-stone-300 rounded p-3 focus:outline-none focus:border-wedding-500 focus:ring-1 focus:ring-wedding-500 transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">Last Name</label>
-                            <input type="text" required class="w-full bg-white border border-stone-300 rounded p-3 focus:outline-none focus:border-wedding-500 focus:ring-1 focus:ring-wedding-500 transition">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">Email Address</label>
-                        <input type="email" required class="w-full bg-white border border-stone-300 rounded p-3 focus:outline-none focus:border-wedding-500 focus:ring-1 focus:ring-wedding-500 transition">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">Will you be attending?</label>
-                        <select class="w-full bg-white border border-stone-300 rounded p-3 focus:outline-none focus:border-wedding-500 focus:ring-1 focus:ring-wedding-500 transition">
-                            <option>Joyfully Accepts</option>
-                            <option>Regretfully Declines</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">Number of Guests</label>
-                        <select class="w-full bg-white border border-stone-300 rounded p-3 focus:outline-none focus:border-wedding-500 focus:ring-1 focus:ring-wedding-500 transition">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-stone-500 mb-2">Dietary Restrictions / Message</label>
-                        <textarea rows="3" class="w-full bg-white border border-stone-300 rounded p-3 focus:outline-none focus:border-wedding-500 focus:ring-1 focus:ring-wedding-500 transition"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-wedding-500 hover:bg-wedding-600 text-white font-bold uppercase tracking-widest py-4 rounded transition shadow-md">
-                        Send RSVP
-                    </button>
-                </form>
-            </div>
+<section id="rsvp" class="py-20 md:py-28 bg-white relative">
+    <div class="max-w-3xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <span class="text-wedding-500 text-sm font-bold tracking-widest uppercase">Join Us</span>
+            <h2 class="font-serif text-4xl md:text-5xl text-wedding-900 mt-2">RSVP</h2>
+            <div class="separator"><i class="fas fa-envelope-open-text text-xl"></i></div>
+            <p class="text-stone-600 mt-4">Please respond by April 1st, 2026</p>
         </div>
-    </section>
+
+        <div class="bg-wedding-50 p-10 md:p-14 rounded-xl shadow-lg border border-wedding-200 text-center">
+            <p class="text-stone-600 text-lg mb-8">
+                We kindly ask that you submit your RSVP using the link below.
+            </p>
+
+            <!-- Replace the URL below with your actual Google Form link -->
+            <a 
+                href="https://forms.gle/UHRqcPNVBzYv4sQHA" 
+                target="_blank"
+                class="inline-block bg-wedding-500 hover:bg-wedding-600 text-white font-bold uppercase tracking-widest px-10 py-4 rounded-full transition shadow-md text-lg"
+            >
+                Submit RSVP
+            </a>
+        </div>
+    </div>
+</section>
+
 
     <footer class="bg-stone-900 text-stone-400 py-12 text-center">
         <h2 class="font-serif text-2xl text-white mb-4">Logan & Javier</h2>
-        <p class="uppercase text-xs tracking-widest mb-4">October 12, 2025 • San Francisco</p>
+        <p class="uppercase text-xs tracking-widest mb-4">June 27, 2026 • Canadian Lakes, Michigan</p>
         <p class="text-xs opacity-50">Made with love</p>
     </footer>
 
